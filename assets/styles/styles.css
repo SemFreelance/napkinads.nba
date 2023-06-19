@@ -1,3 +1,23 @@
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .services_header {
     position: absolute;
     width: 100%;
@@ -382,6 +402,14 @@
 .home .services_description {
     max-width: 60%;
     margin-bottom: 32px;
+}
+
+.home_inform {
+    animation: slideOut 1s ease-in-out;
+}
+
+.home_image {
+    animation: slideIn 1s ease-in-out;
 }
 
 @media (max-width: 1500px) {
