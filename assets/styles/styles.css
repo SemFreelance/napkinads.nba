@@ -607,10 +607,6 @@
     z-index: 1;
 }
 
-.slick-arrow:hover {
-    box-shadow: 0 0 20px 10px #1B1D1B;
-}
-
 .slick-arrow.slick-prev {
     background-image: url(../images/main/arrow-prev.svg);
     right: 66px;
@@ -622,6 +618,28 @@
 
 .slick-slider .slick-list {
     overflow: visible;
+}
+
+.slick-arrow:hover {
+    background-image: url(../images/main/arrow-next-hover.svg);
+}
+
+.slick-arrow.slick-prev:hover {
+    background-image: url(../images/main/arrow-next-hover.svg);
+    transform: rotate(180deg);
+}
+
+.slick-arrow:active {
+    background-image: url(../images/main/arrow-next-active.svg);
+}
+
+.slick-arrow.slick-prev:active {
+    background-image: url(../images/main/arrow-next-active.svg);
+    transform: rotate(180deg);
+}
+
+.slick-disabled {
+    opacity: 0.5;
 }
 
 .slick-slide {
