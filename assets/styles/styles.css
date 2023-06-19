@@ -130,11 +130,6 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
-    .services_header .container,
-    .services_footer .container {
-        flex-direction: column;
-    }
 }
 
 @media(max-width: 992px) {
@@ -145,6 +140,13 @@
     .services_section .container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+@media(max-width: 767px) {
+ .services_header .container,
+    .services_footer .container {
+        flex-direction: column;
     }
 }
 
