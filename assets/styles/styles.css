@@ -67,6 +67,23 @@
     color: #000000;
 }
 
+.footer_button__link:hover,
+.header_button__link:hover {
+    color: #0CBEE8;
+}
+
+.footer_button__link:active,
+.header_button__link:active {
+    background: #C4C4C4;
+    color: #000000;
+}
+
+.footer_button__link:disabled,
+.header_button__link:disabled {
+    background: #6A6A6A;
+    color: #BBBBBB;
+}
+
 .footer_menu_item__link,
 .header_menu_item__link {
     font-family: 'Gilroy', sans-serif;
@@ -74,6 +91,17 @@
     font-size: 20px;
     line-height: 27px;
     color: #C6C6C6;
+}
+
+.footer_menu_item__link:hover,
+.header_menu_item__link:hover {
+    color: #FFFFFF;
+}
+
+.footer_menu_item__link:active,
+.header_menu_item__link:active {
+    color: #6A6A6A;
+
 }
 
 @media(max-width: 992px) {
@@ -144,7 +172,8 @@
 }
 
 @media(max-width: 767px) {
- .services_header .container,
+
+    .services_header .container,
     .services_footer .container {
         flex-direction: column;
     }
@@ -275,8 +304,21 @@
     }
 }
 
+.services_form_container input[type="submit"].wpcf7-submit:hover,
 .services_button:hover {
-    background: linear-gradient(132.2deg, #3F75FF -17.48%, #04C9E4 162.74%);
+    background: linear-gradient(132.2deg, #78EFFF -17.48%, #618DFF 162.74%);
+}
+
+.services_form_container input[type="submit"].wpcf7-submit:active,
+.services_button:active {
+    color: #FFFFFF;
+    background: linear-gradient(132.2deg, #008294 -17.48%, #002DA1 162.74%);
+}
+
+.services_form_container input[type="submit"].wpcf7-submit:disabled,
+.services_button:disabled {
+    color: #BBBBBB;
+    background: #6A6A6A;
 }
 
 .home {
