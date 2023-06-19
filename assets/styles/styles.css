@@ -147,16 +147,18 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1400px) {
 
     .services_header .container,
     .services_footer .container,
     .home .container,
     .services_section .container {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
@@ -526,7 +528,8 @@
 }
 
 .application_inform {
-    max-width: 40%;
+    max-width: 45%;
+    margin: auto;
 }
 
 .application_image {
