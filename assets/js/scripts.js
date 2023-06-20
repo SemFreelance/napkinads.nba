@@ -22,6 +22,8 @@ jQuery(document).ready(function () {
         ]
     });
 
+
+
     $(".header_menu_item__link, .footer_menu_item__link").on("click", function (event) {
         event.preventDefault();
         if ($("body").hasClass("show_menu")) {
