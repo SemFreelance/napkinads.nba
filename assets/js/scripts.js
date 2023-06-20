@@ -24,6 +24,11 @@ jQuery(document).ready(function () {
 
     $(".header_menu_item__link, .footer_menu_item__link").on("click", function (event) {
         event.preventDefault();
+        if ($("body").hasClass("show_menu")) {
+            $("body").removeClass("show_menu")
+        } else {
+            $("body").addClass("show_menu")
+        }
         var id = $(this).attr('href')
             , top = $(id).offset().top;
         $('body,html').animate({
@@ -31,5 +36,11 @@ jQuery(document).ready(function () {
         }, 1500);
     });
 
-
+    $(".mobile_button").on("click", function (event) {
+        if ($("body").hasClass("show_menu")) {
+            $("body").removeClass("show_menu")
+        } else {
+            $("body").addClass("show_menu")
+        }
+    });
 });
